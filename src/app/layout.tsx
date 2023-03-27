@@ -17,13 +17,15 @@ export default function RootLayout({
           <h1>Welcome to Next</h1>
           <ul>
             <li>
-              <Link href="/">Home page</Link>
+              <Link href="/" prefetch={false}>
+                Home page
+              </Link>
             </li>
+
             <li>
-              <Link href="/ssr-streaming">Go to streaming</Link>
-            </li>
-            <li>
-              <Link href="/ssr-blocking">Go to blocking SSR</Link>
+              <Link href="/ssr-blocking" prefetch={false}>
+                Go to blocking SSR
+              </Link>
             </li>
           </ul>
         </nav>
